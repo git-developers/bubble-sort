@@ -1,0 +1,7 @@
+name: D8 Test Module
+description: 'BubbleSort Simulation'
+type: module
+core: 8.x
+package: Custom
+libraries:
+  - bubble_sort_module/bubble-sort-library

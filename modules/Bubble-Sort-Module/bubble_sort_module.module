@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function bubble_sort_module_theme() {
+    $theme['bubble_sort_module_page_theme'] = [
+        'variables' => ['from' => NULL, 'to' => NULL],
+        'template' => 'bubble-sort-theme-page',
+    ];
+
+    return $theme;
+}
+
+function mymodule_preprocess_page(&$variables) {
+    global $base_root, $base_path;
+    $variables['image1'] = $base_root . $base_path . drupal_get_path('module', 'bubble_sort_module') . '/assets/images/bubblesort.png';
+}

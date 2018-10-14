@@ -1,0 +1,47 @@
+bubble_sort_module.bubble_sort_simulation:
+  path: '/bubble-sort-simulation'
+  defaults:
+    _controller: 'Drupal\bubble_sort_module\Controller\BubbleSortModuleController::index'
+    _title: 'BubbleSort Simulation'
+  requirements:
+    _permission: 'access content'
+
+bubble_sort_module.initialize_array:
+  path: '/initialize-array'
+  defaults:
+    _controller: 'Drupal\bubble_sort_module\Controller\BubbleSortModuleController::initializeArray'
+    _title: 'BubbleSort Simulation'
+  requirements:
+    _permission: 'access content'
+
+bubble_sort_module.display_sorting:
+  path: '/display-sorting'
+  defaults:
+    _controller: 'Drupal\bubble_sort_module\Controller\BubbleSortModuleController::displaySorting'
+    _title: 'BubbleSort Simulation'
+  requirements:
+    _permission: 'access content'
+
+bubble_sort_module.sorting_algorithm:
+  path: '/sorting-algorithm'
+  defaults:
+    _controller: 'Drupal\bubble_sort_module\Controller\BubbleSortModuleController::sortingAlgorithm'
+    _title: 'BubbleSort Simulation'
+  requirements:
+    _permission: 'access content'
+
+bubble_sort_module.reset:
+  path: '/reset'
+  defaults:
+    _controller: 'Drupal\bubble_sort_module\Controller\BubbleSortModuleController::reset'
+    _title: 'BubbleSort Simulation'
+  requirements:
+    _permission: 'access content'
+
+bubble_sort_module.test_form:
+  path: /admin/config/system/test-form
+  defaults:
+    _form: 'Drupal\bubble_sort_module\Form\TestForm'
+    _title: 'Test Form'
+  requirements:
+    _permission: 'configure_form'

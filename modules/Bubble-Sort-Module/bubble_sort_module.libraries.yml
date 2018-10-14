@@ -1,0 +1,11 @@
+bubble-sort-library:
+  version: 1.x
+  css:
+    layout:
+      assets/css/bubble-sort.css: {}
+  js:
+    assets/js/bubble-sort.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
