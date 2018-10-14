@@ -1,139 +1,51 @@
 
-CONTENTS OF THIS FILE
+BubbleSort Simulation
 ---------------------
 
- * About Drupal
- * Configuration and features
- * Installation profiles
- * Appearance
- * Developing for Drupal
- * More information
+* PROBLEM: Write a simulation of bubble sort algorithm using PHP.
 
-ABOUT DRUPAL
+
+GOALS
 ------------
 
-Drupal is an open source content management platform supporting a variety of
-websites ranging from personal weblogs to large community-driven websites. For
-more information, see the Drupal website at https://www.drupal.org, and join
-the Drupal community at https://www.drupal.org/community.
+1. Develop a one‐page php‐based web application in functionality similar to the java applet
+    on the screenshot. This application does not have to be the exact copy of the applet, only
+    the elements described below are required.
+2. The application should show every step of the bubble‐sort algorithm for a vector
+    containing 10 integer numbers.
+3. There should be two buttons on the page: Shuffle and Step.
+    a. Shuffle button should initialize the array with 10 random integers between 0 and100.
+    b. Step button performs a single step of the sorting algorithm and displays it on the web page.
+4. The array should be presented as a table with 10 rows (not columns like in the applet
+    above). Each row would include a rectangle colored with a color of your choice. The
+    width of the rectangle would be proportional to the number stored in the corresponding
+    array cell.
+5. Every time the Step button is pressed, two numbers are compared and possibly
+    swapped. The rectangles representing these two numbers should be highlighted using
+    colors different from the color of all the other rectangles.
+6. Consecutive clicking on the step button should eventually sort the array so that the
+    largest number (the widest rectangle) will be at the top of the page (the first row in the
+    table) and the smallest number (the narrowest rectangle) will be in the last row of the
+    table.
+7. Once the array is sorted, the Step button should either be disabled or hidden or from the
+    user. When the Shuffle button is clicked again, the Step button will be reenabled.
+8. All the processing needs to be done on the server side.
+9. Make it as presentable and user‐friendly as possible.
+10. The deliverable will be a single php file (unless there are images or javascript files
+    required by the page).
+11. Bonus features:
+    a. Add a Play button that would simulate consecutive clicks on the Step button and
+    use Ajax calls to reload the table
+    b. if you really want to impress us, complete this assignment as a Drupal module.
+    Feel free to be as creative as you want. Some ideas of implementation:
+        i. Show the Bubble Sort demo as a separate page with a dedicated path,
+        let’s say http://www.example.com/bubblesort.
+        ii. Make the module configurable – the admin may want to change the
+        number of integers that need to be sorted, range of integers etc.
+        iii. Whatever else you think would be cool and would make sense for this
+        application.
 
-Legal information about Drupal:
- * Know your rights when using Drupal:
-   See LICENSE.txt in the "core" directory.
- * Learn about the Drupal trademark and logo policy:
-   https://www.drupal.com/trademark
+
 
 CONFIGURATION AND FEATURES
 --------------------------
-
-Drupal core (what you get when you download and extract a drupal-x.y.tar.gz or
-drupal-x.y.zip file from https://www.drupal.org/project/drupal) has what you
-need to get started with your website. It includes several modules (extensions
-that add functionality) for common website features, such as managing content,
-user accounts, image uploading, and search. Core comes with many options that
-allow site-specific configuration. In addition to the core modules, there are
-thousands of contributed modules (for functionality not included with Drupal
-core) available for download.
-
-More about configuration:
- * Install, update, and maintain Drupal:
-   See INSTALL.txt and UPDATE.txt in the "core" directory.
- * Learn about how to use Drupal to create your site:
-   https://www.drupal.org/documentation
- * Follow best practices:
-   https://www.drupal.org/best-practices
- * Download contributed modules to /modules to extend Drupal's functionality:
-   https://www.drupal.org/project/modules
- * See also: "Developing for Drupal" for writing your own modules, below.
-
-
-INSTALLATION PROFILES
----------------------
-
-Installation profiles define additional steps (such as enabling modules,
-defining content types, etc.) that run after the base installation provided
-by core when Drupal is first installed. There are two basic installation
-profiles provided with Drupal core.
-
-Installation profiles from the Drupal community modify the installation process
-to provide a website for a specific use case, such as a CMS for media
-publishers, a web-based project tracking tool, or a full-fledged CRM for
-non-profit organizations raising money and accepting donations. They can be
-distributed as bare installation profiles or as "distributions". Distributions
-include Drupal core, the installation profile, and all other required
-extensions, such as contributed and custom modules, themes, and third-party
-libraries. Bare installation profiles require you to download Drupal Core and
-the required extensions separately; place the downloaded profile in the
-/profiles directory before you start the installation process.
-
-More about installation profiles and distributions:
- * Read about the difference between installation profiles and distributions:
-   https://www.drupal.org/node/1089736
- * Download contributed installation profiles and distributions:
-   https://www.drupal.org/project/distributions
- * Develop your own installation profile or distribution:
-   https://www.drupal.org/docs/8/creating-distributions
-
-
-APPEARANCE
-----------
-
-In Drupal, the appearance of your site is set by the theme (themes are
-extensions that set fonts, colors, and layout). Drupal core comes with several
-themes. More themes are available for download, and you can also create your own
-custom theme.
-
-More about themes:
- * Download contributed themes to /themes to modify Drupal's appearance:
-   https://www.drupal.org/project/themes
- * Develop your own theme:
-   https://www.drupal.org/docs/8/theming
-
-DEVELOPING FOR DRUPAL
----------------------
-
-Drupal contains an extensive API that allows you to add to and modify the
-functionality of your site. The API consists of "hooks", which allow modules to
-react to system events and customize Drupal's behavior, and functions that
-standardize common operations such as database queries and form generation. The
-flexible hook architecture means that you should never need to directly modify
-the files that come with Drupal core to achieve the functionality you want;
-instead, functionality modifications take the form of modules.
-
-When you need new functionality for your Drupal site, search for existing
-contributed modules. If you find a module that matches except for a bug or an
-additional needed feature, change the module and contribute your improvements
-back to the project in the form of a "patch". Create new custom modules only
-when nothing existing comes close to what you need.
-
-More about developing:
- * Search for existing contributed modules:
-   https://www.drupal.org/project/modules
- * Contribute a patch:
-   https://www.drupal.org/patch/submit
- * Develop your own module:
-   https://www.drupal.org/developing/modules
- * Follow programming best practices:
-   https://www.drupal.org/developing/best-practices
- * Refer to the API documentation:
-   https://api.drupal.org/api/drupal/8
- * Learn from documented Drupal API examples:
-   https://www.drupal.org/project/examples
-
-MORE INFORMATION
-----------------
-
- * See the Drupal.org online documentation:
-   https://www.drupal.org/documentation
-
- * For a list of security announcements, see the "Security advisories" page at
-   https://www.drupal.org/security (available as an RSS feed). This page also
-   describes how to subscribe to these announcements via email.
-
- * For information about the Drupal security process, or to find out how to
-   report a potential security issue to the Drupal security team, see the
-   "Security team" page at https://www.drupal.org/security-team
-
- * For information about the wide range of available support options, visit
-   https://www.drupal.org and click on Community and Support in the top or
-   bottom navigation.
