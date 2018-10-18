@@ -23,7 +23,7 @@
         base.initializeArray = function(event) {
 
             $.ajax({
-                url: '/drupal8/initialize-array',
+                url: '/initialize-array',
                 type: 'POST',
                 dataType: 'html',
                 data: $("form[name='form-sort']").serialize(),
@@ -43,7 +43,7 @@
         base.displaySorting = function(event) {
 
             $.ajax({
-                url: '/drupal8/display-sorting',
+                url: '/display-sorting',
                 type: 'POST',
                 dataType: 'html',
                 data: $("form[name='form-sort']").serialize(),
@@ -64,7 +64,7 @@
         base.sortingAlgorithm = function(event) {
 
             $.ajax({
-                url: '/drupal8/sorting-algorithm',
+                url: '/sorting-algorithm',
                 type: 'POST',
                 dataType: 'html',
                 data: $("form[name='form-sort']").serialize(),
@@ -89,7 +89,7 @@
         base.reset = function(event) {
 
             $.ajax({
-                url: '/drupal8/reset',
+                url: '/reset',
                 type: 'POST',
                 dataType: 'html',
                 data: $("form[name='form-sort']").serialize(),
@@ -119,7 +119,7 @@
 
         base.play = function(event) {
             $.ajax({
-                url: '/drupal8/sorting-algorithm',
+                url: '/sorting-algorithm',
                 type: 'POST',
                 dataType: 'html',
                 data: $("form[name='form-sort']").serialize(),
