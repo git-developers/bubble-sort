@@ -1,0 +1,17 @@
+---
+
+- hosts: webservers
+  become: true
+  vars:
+    - repo_url: https://github.com/git-developers/bubble-sort.git
+    - app_name: bubble-sort
+    - repo_remote: origin
+    - repo_version: master
+    - webapps_dir: /var/www/html
+    - virtualenv_root: /deployed/PleaseDeployMe/mac
+    - welcomeMsg: "Test"
+
+  tasks:
+    - name: Git Pull Project
+      git: repo={{repo_url}} dest={{webapps_dir}}/{{app_name}} version={{repo_version}} force=yes
+
